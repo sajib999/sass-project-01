@@ -1,0 +1,33 @@
+
+.header-area {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    background-color: $rose-900;
+    overflow: hidden;
+
+    
+    .logo {
+        a {
+            color: mix($green-400, $blue-500, 70%);
+        }
+
+    }
+    .menu {
+        
+        a {
+            color: mix($green-400, $blue-500, 70%);
+
+            &:hover{
+                color:  $rose-400;
+            }
+            
+        }
+
+        .active {
+            color:  $rose-200;
+        }
+
+    }
+}

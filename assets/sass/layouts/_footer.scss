@@ -1,0 +1,30 @@
+.footer__area {
+    background-color: $rose-600;
+    padding: 1rem 0;
+
+    .footer__content {
+
+        p {
+            font-size: map-get($font-size, text-lg );
+            font-weight: map-get($font-weight, font-semibold);
+            line-height: map-get($line-height, leading-5);
+            color: $rose-300;
+
+        }
+        a {
+            font-size: map-get($font-size, text-lg );
+            font-weight: map-get($font-weight, font-semibold);
+            line-height: map-get($line-height, leading-5);
+            color: $rose-300;
+            transition: map-get($transition, transition-500 );
+
+            &:hover {
+                color: $rose-900;
+                font-size: map-get($font-size, text-2xl );
+            }
+        }
+
+    }
+
+    
+}

@@ -1,0 +1,95 @@
+.blog__area {
+    background-color: $rose-200;
+
+    .blog__title {
+
+        h2 {
+            font-size: map-get($font-size, text-5xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-9);
+        color: $violet-700;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: 0.5rem;
+            width: 5rem;
+            height: 0.3rem;
+            background: $teal-500;
+            transform: translateX(-50%);
+            border-radius: map-get($border-radius, rounded-full );
+            
+
+        }
+    }
+
+    }
+    .blog__single {
+        border: 2px solid $rose-700;
+        border-left: 2px solid $green-500;
+        border-bottom: 2px solid $green-500;
+        padding: 1rem;
+        transition: map-get($transition, transition-700 );
+        border-radius: map-get($border-radius, rounded-xl );
+
+        &:hover {
+            transform: scale(1.1);
+            
+        }
+
+
+    }
+    .blog__img {
+        width: 100%;
+        overflow: hidden;
+
+    }
+    .blog__meta {
+        width: 80%;
+        margin: 0 auto;
+        background-color: $rose-400;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-top: -2rem;
+        border: 2px solid $rose-600;
+        display: flex;
+        justify-content: space-evenly;
+        z-index: 1;
+        position: relative;
+        border-radius: map-get($border-radius, rounded-xl );
+
+        a {
+            font-size: map-get($font-size, text-xl );
+            font-weight: map-get($font-weight, font-semibold);
+            line-height: map-get($line-height, leading-6);
+            transition: map-get($transition, duration-700 );
+            color: $rose-900;
+
+            &:hover {
+                color: $rose-300;
+            }
+
+        }
+
+    }
+    .blog__content {
+
+        h4 {
+            font-size: map-get($font-size, text-2xl );
+            font-weight: map-get($font-weight, font-semibold);
+            line-height: map-get($line-height, leading-8);
+            color: $rose-900;
+
+        }
+        p {
+            font-size: map-get($font-size, text-lg );
+            font-weight: map-get($font-weight, font-semibold);
+            line-height: map-get($line-height, leading-5);
+            color: $coolGray-600;
+
+        }
+
+    }
+}

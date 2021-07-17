@@ -1,0 +1,75 @@
+.counter__area {
+    background-color: $rose-400;
+
+    .counter__title {
+        padding-bottom: 2rem;
+        box-shadow: map-get($box-shadow , box-shadow-2xl );
+        border-radius: map-get($border-radius, rounded-full );
+
+    }
+    h2 {
+        font-size: map-get($font-size, text-5xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-9);
+        color: $violet-700;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: 0.3rem;
+            width: 5rem;
+            height: 0.3rem;
+            background: $teal-500;
+            transform: translateX(-50%);
+            border-radius: map-get($border-radius, rounded-full );
+            
+
+        }
+
+    }
+    .counter__para {
+        width: 70%;
+            margin: 0 auto;
+            font-size: map-get($font-size, text-xl );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-7);
+        color: $coolGray-600;
+
+    }
+    .counter__content {
+        margin-top: 60px;
+
+    }
+    i {
+        padding: 2rem;
+        border: 2px solid $violet-700;
+        outline-offset: -0.13rem;
+        outline: 2px solid $rose-900;
+        font-size: map-get($font-size, text-2xl );
+        color: $rose-700;
+        background: $sky-400;
+        
+        transition: map-get($transition, transition-500 );
+
+        &:hover {
+            outline-offset: 0.3rem;
+        }
+
+    }
+    h4 {
+        font-size: map-get($font-size, text-4xl );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-9);
+        color: $lime-900;
+
+    }
+    .counter__opinion {
+        font-size: map-get($font-size, text-2xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-5);
+        color: $emerald-900;
+
+    }
+}

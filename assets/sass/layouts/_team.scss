@@ -1,0 +1,98 @@
+.team__area {
+    background-color: $rose-300;
+
+    .team__title {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        box-shadow: map-get($box-shadow , box-shadow-2xl );
+        border-radius: map-get($border-radius, rounded-full );
+        h2 {
+            font-size: map-get($font-size, text-5xl );
+            font-weight: map-get($font-weight, font-extrabold);
+            line-height: map-get($line-height, leading-9);
+            color: $violet-700;
+            position: relative;
+    
+            &:before {
+                position: absolute;
+                content: '';
+                left: 50%;
+                bottom: 0.3rem;
+                width: 5rem;
+                height: 0.3rem;
+                background: $teal-500;
+                transform: translateX(-50%);
+                border-radius: map-get($border-radius, rounded-full );
+                
+    
+            }
+
+    }
+
+}
+
+    .team__single {
+        position: relative;
+        overflow: hidden;
+        border-radius: map-get($border-radius, rounded-lg );
+        box-shadow: map-get($box-shadow , box-shadow-2xl );
+        border-right: 2px solid $rose-600;
+        background-color: $rose-600;
+        &:hover {
+            .team__overlay {
+                bottom: 0;
+            }
+        }
+
+    }
+    img {
+        @include backgroundImg();
+
+    }
+    .team__overlay {
+        position: absolute;
+        left: 0;
+        bottom: -8rem;
+        background-color: $rose-300;
+        width: 100%;
+        padding: 1.3rem 0;
+        text-align: center;
+        transition: map-get($transition , transition-500 );
+        opacity: 0.9;
+        border-radius: map-get($border-radius, rounded-full );
+
+    }
+    h4 {
+        font-size: map-get($font-size, text-4xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-7);
+        color: $rose-600;
+        margin-bottom: 1rem;
+
+    }
+    span {
+        font-size: map-get($font-size, text-xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-4);
+        color: $rose-600;
+        margin-bottom: 1rem;
+        display: block;
+
+    }
+    .social {
+        font-size: map-get($font-size, text-4xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-4);
+        margin-bottom: 1rem;
+        margin-right: 0.3rem;
+        color: $rose-600;
+        transition: map-get($transition , transition-500 );
+        &:hover {
+            @include linearGradientColor();
+        }
+        
+    
+
+    }
+}

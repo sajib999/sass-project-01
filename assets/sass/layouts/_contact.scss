@@ -1,0 +1,124 @@
+.contact__area {
+    background-color: $rose-300;
+    
+
+    .contact__title {
+        overflow: hidden;
+
+        h2 {
+            font-size: map-get($font-size, text-5xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-9);
+        color: $violet-700;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: 0.5rem;
+            width: 5rem;
+            height: 0.3rem;
+            background: $teal-500;
+            transform: translateX(-50%);
+            border-radius: map-get($border-radius, rounded-full );
+            
+
+        }
+
+        }
+        p {
+        font-size: map-get($font-size, text-xl );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-7);
+
+        }
+    }
+    .contact__form {
+
+        form {
+
+        }
+
+        input,textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.8rem;
+            resize: none;
+            font-size: map-get($font-size, text-lg );
+            font-weight: map-get($font-weight, font-medium);
+            line-height: map-get($line-height, leading-5);
+            outline: none;
+            background: transparent;
+            border: 1px solid $rose-700;
+            border-left: 2px solid $green-500;
+
+            &:focus {
+                border: 2px solid $green-500;
+                border-left: 2px solid $rose-700;
+            }
+
+
+        }
+        .contact__submit {
+            background-color: $rose-700;
+            color: $rose-200;
+            font-size: map-get($font-size, text-2xl );
+            font-weight: map-get($font-weight, font-semibold);
+            line-height: map-get($line-height, leading-8);
+            transition: map-get($transition, transition-700 );
+            
+
+            &:hover {
+                background-color: $rose-400;
+                color: $rose-700;
+                
+            }
+            
+        }
+    }
+    
+
+    .contact__address {
+        
+
+    }
+    .contact__single {
+        display: flex;
+        align-items: center;
+
+
+    }
+    i {
+        background-color: $rose-700;
+        color: $rose-200;
+        padding: 0.5rem 0.8rem;
+        margin-right: 0.5rem;
+        font-size: map-get($font-size, text-2xl );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-8);
+        transition: map-get($transition, transition-700 );
+        border-radius: map-get($border-radius, rounded-full );
+
+        &:hover {
+            background-color: $rose-400;
+            color: $rose-700;
+        }
+
+    }
+    h4 {
+        font-size: map-get($font-size, text-2xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-5);
+        color: $rose-700;
+
+    }
+    span {
+        display: block;
+        font-size: map-get($font-size, text-lg );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-5);
+        color: $rose-500;
+
+    }
+}

@@ -1,0 +1,28 @@
+.banner__area {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+
+    .banner__content {
+
+    }
+    .banner__title {
+        font-size: map-get($font-size, text-5xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-9);
+        color: $rose-900;
+        padding-bottom: 2rem;
+        box-shadow: map-get($box-shadow , box-shadow-2xl );
+
+    }
+    .banner__title--secondary {
+        font-size: map-get($font-size, text-2xl );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-8);
+        color: $rose-300;
+
+    }
+    
+}

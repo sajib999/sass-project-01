@@ -1,0 +1,132 @@
+.timeline__area {
+    background-color: $rose-300;
+
+    .timeline__title {
+        width: 70%;
+        margin: 0 auto;
+        padding: 2rem;
+        padding-bottom: 2rem;
+        box-shadow: map-get($box-shadow , box-shadow-2xl );
+        border-radius: map-get($border-radius, rounded-full );
+        
+        
+
+    }
+    h2 {
+        font-size: map-get($font-size, text-5xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-9);
+        color: $violet-700;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: 0.3rem;
+            width: 5rem;
+            height: 0.3rem;
+            background: $teal-500;
+            transform: translateX(-50%);
+            border-radius: map-get($border-radius, rounded-full );
+            
+
+        }
+
+    }
+    p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: map-get($font-size, text-xl );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-7);
+        color: $coolGray-600;
+
+    }
+    .timeline__list {
+        position: relative;
+        margin-top: 50px;
+
+        &:after {
+            position: absolute;
+            content: '';
+            left: 50%;
+            top: 0;
+            width: 0.2rem;
+            height: 100%;
+            background-color: $rose-500;
+            transform: translateX(-50%);
+        }
+
+    }
+    li {
+        position: relative;
+        clear: both;
+        overflow: hidden;
+        
+
+        
+        
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 49%;
+            width: 1.3rem;
+            height: 1.3rem;
+            background-color: $rose-600;
+            border-radius: map-get($border-radius, rounded-lg );
+        }
+
+        &:nth-child(even) {
+            .timeline__content {
+                float: right;
+                text-align: left;
+            }
+        }
+
+    }
+
+    .timeline__content {
+        border: 1px solid $rose-500;
+        width: 45%;
+        padding: 2.3rem;
+        float: left;
+        text-align: right;
+        border-left: 2px solid $teal-500;
+        box-shadow: map-get($box-shadow , box-shadow-2xl );
+        border-radius: map-get($border-radius, rounded-full );
+        transition: map-get($transition, transition-700 );
+
+        &:hover {
+            transform: scale(1.1);
+        }
+        
+        
+
+    }
+    span {
+        font-size: map-get($font-size, text-2xl );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-7);
+        color: $rose-600;
+
+    }
+    h4 {
+        font-size: map-get($font-size, text-2xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-7);
+        color: $rose-600;
+
+    }
+    p {
+        font-size: map-get($font-size, text-lg );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-4);
+        color: $coolGray-600;
+        float:right;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,23 @@
+@mixin border($border-width, $border-style, $border-color) {
+    border-width: $border-width;
+    border-style : $border-style;
+    border-color : $border-color;
+};
+
+@mixin linearGradient(){
+    background-color: linear-gradient($rose-500, $blue-500, $lime-500);
+}
+
+@mixin linearGradientColor(){
+    color: linear-gradient($rose-500, $blue-500, $lime-500);
+}
+
+
+@mixin backgroundImg() {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+

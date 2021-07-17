@@ -1,0 +1,177 @@
+@import '../utilities/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+
+
+/****  Flex and Inline-flex  *****/
+
+$flex : flex, inline-flex;
+
+@each $i in $flex {
+.d-#{$i}{
+    display: $i;
+}
+}
+
+/*** Justify-content: space-between/ center/ end…..more.. ***/
+
+$justify : start, center, end, evenly, space-around, space-between;
+
+@each $i in $justify {
+.justify-content-#{$i} {
+    justify-content: $i ;
+}
+}
+
+
+/*** align-items ***/
+
+$align-items: start, center, end, stretch, baseline;
+
+@each $i in $align-items {
+    .align-items-#{$i} {
+        align-items: $i;
+    }
+}
+
+
+/*** text-align ****/ 
+
+
+$text : left, center, right, justify;
+
+@each $i in $text {
+    .text-#{$i} {
+    text-align : $i;
+    }
+}
+
+
+/*** Text-transform ** sass method ***/
+
+@each $i in(uppercase, capitalize, lowercase) {
+    .text-#{$i} {
+        text-transform: $i;
+    }
+}
+
+
+/*** padding sass method ****/
+
+
+@for $i from 1 through 10 {
+    .pt-#{$i * 10}{
+       padding-top : $i * 10px;
+    }
+    .pb-#{$i * 10}{
+       padding-bottom : $i * 10px;
+    }
+    .pr-#{$i * 10} {
+        padding-right : $i * 10px;
+    }
+    .pl-#{$i * 10} {
+       padding-left : $i * 10px;
+    } 
+
+}
+
+/*** margin sass method ****/
+
+
+@for $i from 1 through 10 {
+    .mt-#{$i * 10}{
+      margin-top : $i * 10px;
+    }
+    .mb-#{$i * 10}{
+      margin-bottom : $i * 10px;
+    }
+    .mr-#{$i * 10} {
+      margin-right : $i * 10px;
+    }
+    .ml-#{$i * 10} {
+      margin-left : $i * 10px;
+    }
+    
+}
+
+// button button 
+
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 0.9rem;
+    border: 2px solid $rose-900;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    background: linear-gradient(to right, $rose-500, $blue-500);
+    outline-offset: -0.13rem;
+    outline: 2px solid $rose-900;
+    color:linear-gradient(to left, $lime-500, $fuchsia-500);
+    transition:0.5s;
+
+    &:hover {
+        background: linear-gradient(to right, $purple-500, $sky-500);
+        outline-offset: 0.3rem;
+        
+    }
+    &:focus {
+        background: linear-gradient(to right, $lime-500, $fuchsia-500);
+    }
+}
+
+// Background Img 
+
+
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $rose-900;
+        opacity: 0.75;
+        z-index: -1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+.price__area {
+    background-color: $rose-200;
+
+    .price__title {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding-bottom: 2rem;
+        box-shadow: map-get($box-shadow , box-shadow-2xl );
+        border-radius: map-get($border-radius, rounded-full );
+        h2 {
+            font-size: map-get($font-size, text-5xl );
+            font-weight: map-get($font-weight, font-extrabold);
+            line-height: map-get($line-height, leading-9);
+            color: $violet-700;
+            position: relative;
+    
+            &:before {
+                position: absolute;
+                content: '';
+                left: 50%;
+                bottom: 0.3rem;
+                width: 5rem;
+                height: 0.3rem;
+                background: $teal-500;
+                transform: translateX(-50%);
+                border-radius: map-get($border-radius, rounded-full );
+                
+    
+            }
+
+    }
+
+}
+    .price__single {
+        background-color: $rose-400;
+        padding: 2rem;
+        text-align: center;
+        border-radius: map-get($border-radius, rounded-lg );
+        box-shadow: map-get($box-shadow , box-shadow-2xl);
+
+    }
+    span {
+        font-size: map-get($font-size, text-2xl );
+        font-weight: map-get($font-weight, font-semibold);
+        line-height: map-get($line-height, leading-7);
+        color: $coolGray-600;
+        margin-bottom: 1rem;
+
+    }
+    h4 {
+        font-size: map-get($font-size, text-4xl );
+        font-weight: map-get($font-weight, font-extrabold);
+        line-height: map-get($line-height, leading-7);
+        color: $rose-600;
+        margin-bottom: 1rem;
+
+    }
+    .price__item {
+        
+
+    }
+    .price__list {
+        padding: 1.5rem;
+        border-bottom: 1px solid $rose-900;
+        border-radius: map-get($border-radius, rounded-full );
+        box-shadow: map-get($box-shadow , box-shadow-lg);
+
+    }
+}
