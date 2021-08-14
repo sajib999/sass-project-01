@@ -1,0 +1,66 @@
+.about {
+    padding: 9rem 4rem;
+    width: 100%;
+    background: repeating-radial-gradient(circle at 0 0, $teal-500, $lime-500, $violet-500, $rose-500, $amber-500);
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        min-width: 100%;
+
+    }
+    &__col-1 {
+        width: 48%;
+        margin-right: 2rem;
+    }
+    &__content {
+        width: 100%;
+
+    }
+    &__title {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+
+
+    }
+    span {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $rose-700;
+    }
+    &__details-1 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+
+    }
+    &__details-2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+
+    }
+    &__col-2 {
+        width: 48%;
+
+
+    }
+    &__imgBox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}

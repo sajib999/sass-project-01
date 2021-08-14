@@ -1,0 +1,110 @@
+.testimonial {
+    margin-top: 5rem;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    &__title--text {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+
+    }
+    &__title--modifie {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $teal-500;
+
+    }
+    &__title--para {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $blueGray-700;
+
+    }
+    &__content {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        margin: 2rem;
+        text-align: center;
+        border: 2px solid $blueGray-700;
+        padding: 2rem;
+        border-radius: 0.6rem;
+        background: repeating-radial-gradient(circle at 0 0, $teal-500, $rose-500, $violet-500, $lime-500, $indigo-500);
+
+    }
+    &__img {
+        position: relative;
+        width: 7rem;
+        height: 7rem;
+        
+
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        transition: 0.5s;
+        
+        &:hover {
+            border-radius: 0rem;
+        }
+        
+        
+
+    }
+    &__text {
+        margin-top: 2rem;
+
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: $blueGray-900;
+        text-align: center;
+
+    }
+
+    &__short {
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        
+    }
+    &__short--modifie {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $violet-500;
+        cursor: pointer;
+
+        &:hover {
+            color: $teal-500;
+        }
+    }
+
+    
+}

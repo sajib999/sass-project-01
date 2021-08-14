@@ -1,0 +1,97 @@
+.contact {
+    margin-top: 3rem;
+    //margin: 2rem;
+    background-image: url('../images/bg4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 0rem;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+
+    }
+    span {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $amber-500;
+
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $blueGray-900;
+        margin-top: 1rem;
+
+    }
+    &__form {
+        max-width: 30rem;
+        padding: 1.2rem;
+        
+        
+
+    }
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 2rem 0rem;
+        text-transform: uppercase;
+        color: $blueGray-900;
+
+    }
+    &__inputBox {
+        margin-bottom: 1rem;
+        
+
+    }
+    input {
+        width: 100%;
+        height: 100%;
+        padding: 0.6rem 0rem;
+        outline: none;
+        border: 1px solid $blueGray-700;
+        padding-left: 0.3rem;
+        border-left: 2px solid $teal-600;
+        background: $trueGray-200;
+        
+
+        &:focus {
+            border-color: $teal-600;
+        }
+        
+    }
+    .message {
+        width: 100%;
+        resize: none;
+        outline: none;
+        background: $trueGray-200;
+        padding: 0.6rem;
+    }
+    input[type="submit"] {
+        max-width: 8rem;
+        border-left: none;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        border: 1px solid $blueGray-700;
+        padding: 0.9rem 1.2rem;
+        background: $violet-500;
+        color: $violet-100;
+        
+        transition: 0.3s;
+        
+
+        &:hover {
+            background: $teal-500;
+            border-radius: 0.3rem;
+            
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 6rem;
+    background: $gray-400; 
+    
+    &__logo {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $blueGray-900;
+        
+
+    }
+    span {
+        font-size: 2rem;
+        color: $teal-600;
+
+    }
+
+    .navigation {
+        display: flex;
+
+        &__list {
+            margin-left: 1rem;
+
+        }
+        &__link {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $blueGray-900;
+            cursor: pointer;
+            transition: 0.5s;
+
+            
+        }
+    }
+}
+
+// Sticky 
+
+header.sticky {
+    
+    padding: 2rem 6rem;
+    background: $blueGray-700;
+    box-shadow : 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+}
+    
+
+
+header.sticky .header__logo span {
+    color: $rose-700;
+}
+
+header.sticky .navigation__link {
+    color: $blueGray-200;
+
+    &:hover {
+        color: $rose-600;
+    }
+}
+
+
+
+
+
+

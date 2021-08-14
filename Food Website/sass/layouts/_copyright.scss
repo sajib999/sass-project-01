@@ -1,0 +1,25 @@
+.copyright {
+    //margin-top: 4rem;
+    background-color: $blueGray-500;
+
+    p {
+        padding: 0.6rem 0rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: blueGray-700;
+        text-align: center;
+
+    }
+    a {
+        text-transform: lowercase;
+        letter-spacing: 0.1rem;
+        color: $lime-500;
+        transition: 0.3s;
+
+        &:hover {
+            letter-spacing: 0.3rem;
+            color: $teal-500;
+        }
+    }
+}

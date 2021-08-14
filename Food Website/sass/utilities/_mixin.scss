@@ -1,0 +1,35 @@
+
+// // Large
+
+// $bg-large-min : 1240px;
+// $bg-large-max : 1424px;
+
+// // just to do medium and small
+// // medium
+
+// $bg-medium-min : 768px;
+// $bg-medium-max : 1024px;
+
+// @mixin mq-medium($bg-medium-min, $bg-medium-max) {
+
+//     @media(min-width: $bg-medium-min) and (max-width : $bg-medium-max){
+//         @content
+
+//     }
+// }
+
+// // @includes md-medium()
+
+// // small 
+
+// $bg-small-min : 4810px;
+// $bg-small-max : 767px;
+
+// @mixin mq-small() {
+
+//     @media(min-width: $bg-small-min) and (max-width : $bg-small-max){
+
+//     }
+// }
+
+// // @includes mq-small()
