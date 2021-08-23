@@ -1,0 +1,38 @@
+.sideNav {
+    position: fixed;
+    background: $fuchsia-400;
+    width: 15rem;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+
+    &__items {
+        margin-left: 2rem;
+
+    }
+    &__list {
+        margin: 3rem 0;
+
+    }
+    &__link {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $coolGray-100;
+        transition: 0.3s;
+
+        &:hover {
+            color: $coolGray-900;
+        }
+        
+    }
+}
+
+#menuBtn {
+    width: 3rem;
+    position: fixed;
+    top: 1.3rem;
+    right: 4rem;
+    cursor: pointer;
+    
+}

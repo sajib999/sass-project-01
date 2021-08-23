@@ -1,0 +1,96 @@
+.contact {
+    padding: 5rem 0;
+
+    .container {
+        margin: 0 5rem;
+
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+    }
+    &__left--col {
+        flex-basis: 50%;
+
+    }
+    &__content {
+        max-width: 20rem;
+
+    }
+    &__title {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+
+    }
+    &__input {
+        width: 100%;
+        margin-bottom: 0.6rem;
+        padding: 0.6rem 0.5rem;
+        font-size: 0.8rem;
+        border: 2px solid $fuchsia-500;
+        outline: none;
+
+    }
+    &__btnBox {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 100%;
+
+    }
+    &__btn {
+        padding: 0.9rem 1.2rem;
+        background: #fff;
+        font-size: 0.9rem;
+        outline: none;
+        border: 2px solid $fuchsia-500;
+        margin: 2rem 0;
+        flex-basis: 48%;
+
+        &:hover {
+            border: 2px solid $violet-500;
+        }
+
+    }
+    &__line {
+        line-height: 0.6rem;
+
+    }
+    &__line--1 {
+        width: 1rem;
+        height: 1rem;
+        background: $fuchsia-500;
+        display: inline-block;
+
+    }
+    &__line--2 {
+        width: 4rem;
+        height: 2px;
+        background: $fuchsia-500;
+        display: inline-block;
+
+    }
+    &__line--3 {
+        width: 5rem;
+        height: 2px;
+        background: $fuchsia-500;
+        display: inline-block;
+
+    }
+    &__right--col {
+        flex-basis: 50%;
+
+    }
+    &__imgBox {
+        max-width: 100%;
+
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

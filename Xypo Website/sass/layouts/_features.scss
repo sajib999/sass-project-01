@@ -1,0 +1,90 @@
+.feature {
+    padding: 5rem 0;
+
+    .container {
+        margin: 0 6rem;
+
+    }
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        
+
+    }
+    &__col {
+        flex-basis: 25%;
+        
+        
+
+
+    }
+    &__content {
+        text-align: center;
+        max-width: 20rem;
+        
+
+    }
+    &__img {
+        max-width: 6rem;
+        
+
+    }
+    &__title {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+
+    }
+    &__desc {
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+
+    }
+    &__btnBox {
+        display: flex;
+        justify-content: center;
+        margin-top: 7rem;
+
+    }
+    &__line {
+        line-height: 0.6rem;
+        
+
+    }
+    &__line--1 {
+        width: 1rem;
+        height: 1rem;
+        background: $fuchsia-500;
+        display: inline-block;
+
+    }
+    &__line--2 {
+        width: 5rem;
+        height: 2px;
+        background: $fuchsia-500;
+        display: inline-block;
+
+    }
+    &__line--3 {
+        width: 4rem;
+        height: 2px;
+        background: $fuchsia-500;
+        display: inline-block;
+    }
+    &__btn {
+        padding: 0.9rem 1.6rem;
+        border: 2px solid $fuchsia-500;
+        background: #fff;
+        font-size: 0.9rem;
+        margin-left: 2rem;
+
+        &:hover {
+            border: 2px solid $violet-500;
+        }
+
+    }
+}

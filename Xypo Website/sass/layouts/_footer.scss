@@ -1,0 +1,92 @@
+.footer {
+    padding: 5rem 0;
+
+    .container {
+        margin: 0 5rem;
+
+    }
+    hr {
+        border: none;
+        border-top: 1px solid $fuchsia-500;
+        width: 100%;
+
+    }
+
+    &__row {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    &__left--col {
+        flex-basis: 50%;
+        margin-top: 5rem;
+        
+        
+
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__subject {
+        flex-basis: 25%;
+        
+
+    }
+    h4  {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: $fuchsia-500;
+        margin-bottom: 1.2rem;
+
+    }
+    span {
+        font-size: 0.9rem;
+        font-weight: 400;
+        display: block;
+        line-height: 1.3rem;
+
+    }
+    &__right--col {
+        flex-basis: 35%;
+
+    }
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+    }
+    &__copyright {
+        
+
+    }
+    span {
+        font-size: 0.8rem;
+        font-weight: 400;
+        display: block;
+
+    }
+    &__logoBox {
+        max-width: 5rem;
+        
+        
+
+    }
+    &__logo {
+        width: 100%;
+    }
+    &__btn {
+        padding: 0.6rem 1.6rem;
+        border: 2px solid $fuchsia-500;
+        font-size: 0.7rem;
+        margin-top: 1.2rem;
+        background: #fff;
+    }
+}
