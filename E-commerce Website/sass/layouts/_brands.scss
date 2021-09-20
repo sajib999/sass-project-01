@@ -1,0 +1,56 @@
+.brands {
+    padding: 2rem 0;
+    
+    .container {
+        max-width: 1200px;
+        padding: 0 1.3rem;
+        margin: 0 auto;
+
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        padding: 2rem;
+        
+
+    }
+    &__col--5 {
+        flex-basis: 20%;
+        
+
+    }
+    &__imgBox {
+        width: 100%;
+
+    }
+    &__img {
+        padding: 2rem;
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: 1s;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+
+    }
+}
+
+// Responsive 
+
+@media only screen and (max-width : 600px) {
+
+    .brands {
+
+        &__row {
+            text-align: center;
+        }
+        &__col--5 {
+            flex-basis: 50%;
+        }
+    }
+    
+}

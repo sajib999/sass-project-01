@@ -1,0 +1,153 @@
+.details {
+    padding: 4rem 0;
+
+    .container {
+        max-width: 1200px;
+        padding: 0 3rem;
+        margin: 0 auto;
+
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+    }
+    &__col--2 {
+        flex-basis: 50%;
+        //margin: 1rem 2rem;
+
+    }
+    &__img {
+        max-width: 100%;
+    }
+    #productImg {
+        
+
+    }
+    &__small--row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+
+
+    }
+    &__small--col {
+        flex-basis: 24%;
+        margin: 0.6rem 0;
+
+    }
+    &__content {
+        margin-left: 2rem;
+        max-width: 400px;
+        
+    }
+    &__small--img {
+        cursor: pointer;
+
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $coolGray-500;
+        margin-bottom: 2rem;
+
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 3.3rem;
+        color: $coolGray-500;
+        margin: 2rem 0;
+        
+
+    }
+    h5 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $coolGray-700;
+        margin-bottom: 1rem;
+
+    }
+    select {
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        font-weight: 400;
+        outline: none;
+        border: 2px solid $teal-500;
+        padding: 0.3rem;
+
+    }
+    option {
+        font-size: 0.9rem;
+        outline: none;
+
+    }
+    input {
+        width: 2.9rem;
+        height: 2.9rem;
+        line-height: 2.9rem;
+        text-align: center;
+        outline: none;
+        border: 2px solid $teal-500;
+        margin-right: 1rem;
+        
+
+    }
+    &__btn {
+
+        padding: 0.9rem 2rem;
+        background-color: $teal-500;
+        color: #fff;
+        border-radius: 50px;
+        border: none;
+        margin: 2rem 0;
+        display: inline-block;
+        transition: 1s;
+
+        &:hover {
+            background-color: $teal-900;
+        }
+    }
+    h3 {
+        font-size: 1.3rem;
+        margin: 1rem 1rem 1rem 0;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $coolGray-700;
+    }
+    .fa-indent {
+        margin-left: 0.6rem;
+        font-size: 1.3rem;
+        
+
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+// Responsive 
+@media only screen and (max-width : 600px) {
+
+    .details {
+
+        &__row {
+            text-align: center;
+        }
+        &__col--2 {
+            flex-basis: 100%;
+            
+        }
+        
+        
+    }
+    
+}

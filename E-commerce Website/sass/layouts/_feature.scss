@@ -1,0 +1,47 @@
+.features {
+    padding: 4rem 0;
+
+    .container {
+        max-width: 1200px;
+        padding: 0 1.3rem;
+        margin: 0 auto;
+        
+
+    }
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding: 2rem;
+
+    }
+    &__col--3 {
+        flex-basis: 30%;
+        margin-bottom: 2rem;
+        
+        
+
+    }
+    &__img {
+        max-width: 100%;
+        object-fit: cover;
+        
+    }
+}
+
+// Responsive 
+@media only screen and (max-width : 600px) {
+
+    .features {
+
+        &__row {
+            text-align: center;
+        }
+        &__col--3 {
+            flex-basis: 100%;
+        }
+    }
+    
+}

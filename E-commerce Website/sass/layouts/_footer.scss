@@ -1,0 +1,146 @@
+.footer {
+    padding: 1rem 0;
+    background-color: $coolGray-800;
+
+
+    .container {
+        max-width: 1200px;
+        padding: 0 1.3rem;
+        margin: 0 auto;
+
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+    }
+    &__col--4 {
+        //flex-basis: 25%;
+        margin: 1rem 0;
+        text-align: center;
+
+        &:first-child{
+            min-width: 300px;
+            text-align: left;
+        }
+        &:nth-child(2){
+            min-width: 30px;
+            text-align: left;
+        }
+        &:last-child{
+            flex-basis: 12%;
+        }
+        &:nth-child(3){
+            flex-basis: 12%;
+        }
+    }
+
+    
+
+
+    
+    &__content {
+        max-width: 250px;
+
+    }
+    h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        margin: 0.6rem 0;
+
+    }
+    span {
+        font-size: 0.9rem;
+        color: #fff;
+
+    }
+    &__app {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.9rem;
+        
+
+    }
+    img {
+        width: 130px;
+
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        color: #fff;
+    }
+    &__logo {
+        width: 100%;
+        margin: 0.9rem 0;
+        
+    }
+    h4 {
+        font-size: 1.1rem;
+        color: #fff;
+        margin-bottom: 1rem;
+
+    }
+    ul {
+        
+
+    }
+    li {
+        //margin: 0.3rem 0;
+        line-height: 2rem;
+
+    }
+    a {
+        color: #fff;
+        font-size: 0.9rem;
+
+    }
+
+    &__copyright {
+        text-align: center;
+
+    }
+    p {
+        color: #fff;
+        margin: 0.6rem 0;
+
+    }
+    .copyright__link {
+        color: $lime-600;
+        letter-spacing: 2px;
+        transition: 1s;
+
+        &:hover {
+            letter-spacing: 6px;
+        }
+    }
+}
+
+// Responsive 
+@media only screen and (max-width : 600px) {
+
+    .footer{
+
+        &__row {
+            text-align: center;
+        }
+        &__col--4 {
+            flex-basis: 30%;
+            text-align: center;
+
+            &:last-child{
+                flex-basis: 50%;
+            }
+            &:nth-child(3){
+                flex-basis: 50%;
+            }
+        }
+
+    
+        
+    }
+    
+}

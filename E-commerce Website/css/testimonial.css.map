@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/layouts/testimonial.scss"
+    ],
+    "names": [],
+    "file": "testimonial.css"
+}

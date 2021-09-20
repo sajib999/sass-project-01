@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/layouts/brands.scss"
+    ],
+    "names": [],
+    "file": "brands.css"
+}
