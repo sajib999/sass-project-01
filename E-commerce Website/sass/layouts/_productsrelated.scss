@@ -1,0 +1,89 @@
+// Related Products 
+
+.related {
+    
+    margin: 3rem 0;
+
+    .container {
+        width: 1200px;
+        padding: 0 3rem;
+        margin: 0 auto;
+
+
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $coolGray-600;
+        margin-bottom: 2rem;
+
+    }
+    p {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $coolGray-600;
+        margin-bottom: 2rem;
+
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+
+    }
+    &__col--4 {
+        flex-basis: 24%;
+        min-width: 200px;
+        
+    }
+    &__img {
+        max-width: 250px !important;
+    }
+    
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $coolGray-500;
+        margin-top: 0.6rem;
+
+    }
+    &__rating {
+        margin: 0.4rem 0;
+
+    }
+    .fa {
+        font-size: 0.9rem;
+        color: $teal-600;
+
+    }
+    &__price {
+        font-size: 0.9rem;
+        color: $coolGray-900;
+
+    }
+}
+
+// Responsive
+@media only screen and (max-width: 600px) {
+
+    .related {
+
+        &__row {
+            text-align: left;
+
+        }
+        &__col--4 {
+            flex-basis: 100% !important;
+            
+        }
+        
+    }
+}

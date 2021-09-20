@@ -1,0 +1,132 @@
+.header {
+    background: radial-gradient(#fff, $teal-500);
+    
+
+    .container {
+        max-width: 1200px;
+        padding: 0 1.3rem;
+        margin: 0 auto;
+
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        padding: 2rem;
+
+    }
+    &__logoBox {
+
+    }
+    &__logo {
+        max-width: 100%;
+        object-fit: cover;
+
+    }
+    nav {
+        flex: 1;
+        text-align: right;
+
+    }
+    &__item {
+        
+
+    }
+    &__list {
+        margin-right: 1rem;
+        display: inline-block;
+
+    }
+    a {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $coolGray-900;
+        text-transform: capitalize;
+        transition: 0.1s;
+
+        &:hover {
+            color: $coolGray-500;
+        }
+
+    }
+    &__cart {
+
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        margin-top: 5rem;
+        padding: 2rem 0;
+        
+
+    }
+    &__col--2 {
+        flex-basis: 50%;
+        max-width: 400px;
+        
+
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 3.3rem;
+        font-weight: 500;
+        color: $coolGray-700;;
+
+    }
+    p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.3rem;
+        margin: 2rem 0;
+
+    }
+    &__btn {
+        display: inline-block;
+        padding: 0.9rem 2rem;
+        background-color: $teal-700;
+        border-radius: 50px;
+        color: #fff !important;
+        font-size: 0.9rem;
+        &:hover {
+            background-color: $lime-600;
+        }
+
+        
+
+    }
+    &__bg {
+        max-width: 100%;
+        padding: 50px 0;
+        
+    }
+
+}
+// Menu
+.menu-icon {
+    max-width: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    display: none;
+
+
+}
+
+// Responsive 
+@media only screen and (max-width : 600px) {
+
+    .header {
+
+        &__row {
+            text-align: center;
+        }
+        &__col--2 {
+            flex-basis: 100%;
+        }
+    }
+    
+}
